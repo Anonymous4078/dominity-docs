@@ -1,0 +1,33 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff8c00; /* Dark orange */
+  --ifm-color-primary-dark: #e67e00; /* Slightly darker orange */
+  --ifm-color-primary-darker: #cc7000; /* Even darker orange */
+  --ifm-color-primary-darkest: #b35f00; /* Darkest orange */
+  --ifm-color-primary-light: #ffa733; /* Lighter orange */
+  --ifm-color-primary-lighter: #ffba4d; /* Even lighter orange */
+  --ifm-color-primary-lightest: #ffcc66; /* Lightest orange */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffae42; /* Lighter orange for dark mode */
+  --ifm-color-primary-dark: #ff9e29; /* Slightly darker light orange */
+  --ifm-color-primary-darker: #ff9521; /* Even darker light orange */
+  --ifm-color-primary-darkest: #e6851a; /* Darkest light orange */
+  --ifm-color-primary-light: #ffc65c; /* Light orange */
+  --ifm-color-primary-lighter: #ffcf75; /* Even lighter light orange */
+  --ifm-color-primary-lightest: #ffd88e; /* Lightest light orange */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+::selection{
+ background-color: #fda74b5b;
+}

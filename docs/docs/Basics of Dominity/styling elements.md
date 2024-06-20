@@ -20,6 +20,15 @@ you could either use camelCased props or use properties as strings
 
 ### using a class based css framework 
 
-you are free to use any class based css framework like tailwind or [synxia](github.com/jokefat/synxia)
+you are free to use any class based css framework like tailwind or synxia
 which makes it a lot more easier to write css in the js file itself 
 
+### using style to get computed style
+
+you can also use style method to get a computed style of an element by using only first argument and providing the property as a string
+
+```js
+
+let buttonColor=Button().style('background-color')
+
+```

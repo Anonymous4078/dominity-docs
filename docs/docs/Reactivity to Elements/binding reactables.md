@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 
 ---
 
@@ -47,6 +47,6 @@ el('input',{placeHolder:'enter your name',type:'text'}).model(name,{lazy:true})
 ``` 
 :::warning
 
-throttle,debounce,lazy are in beta stages 
+throttle,debounce,lazy are in beta stages and isnt available yet
 
 :::

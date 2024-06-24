@@ -33,6 +33,15 @@ books.setProp('rating',2)
 
 :::info
 
-you can manually trigger all subscribers using `.update()` method
+you can manually trigger all subscribers using `.update()` method , this is really useful incase of arrays and objects since when u modify them u can manually tell everyone that it has been modified , this is what set method and setprop does internally
+
+```js
+books.value.price+=200
+books.update()
+
+readingList.value.push(book)
+readingList.update()
+
+```
 
 :::

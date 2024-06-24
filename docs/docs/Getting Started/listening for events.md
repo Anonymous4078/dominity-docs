@@ -7,8 +7,11 @@ click events are the most commonly used u can easily chain `.onClick()` method t
 
 ```js
 
-el('button','click me').onClick(()=>{
+el('button','click me').onClick((self,e)=>{
+//first parameter self is a reference to the element itself, second parameter is event object
+
     console.log('i have been clicked')
+    self.text('i have been clicked") 
 })
 
 
@@ -40,9 +43,11 @@ el('button','click me').enableHold(0.7).checkFor('hold',()=>{
 
 ```
 
+
 :::tip contextmenu api in pc
  it is recommended to use contextmenu event along with prevent default for larger screens like in a pc, you can use dominityies helper function `getDeviceType()` to check the device
  :::
+
 
 
 
@@ -52,6 +57,9 @@ el('button','click me').enableHold(0.7).checkFor('hold',()=>{
     this is in the works
 :::
 
+ :::danger
+`enableHold()` method ,`onkey()` isnt included in the lite version, neither are helpers like `getDeviceType()`
+:::
 
 ## causing event
 
@@ -61,7 +69,7 @@ you can cause an event to happen on an element by using the `causeEvent()` metho
 
 you might have to define your own events to get pass information from children to parent this can be done by `causeCustomEvent()` method and this takes in event name as first argument and second argument is an object containing data that can be accessed through `e.detail` from the eventListener 
 
-example 
+example **if u dont understand this dont panic , we havent learnt everything yet revisit this example after u complete a few more sections**
 ```js title='search.js'
 function search(){
     let val=reactable('')

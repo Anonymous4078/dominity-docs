@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Dominity.JS',
   tagline: 'compact javascript framework',
-  favicon: 'img/favicon.ico',
+
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -78,7 +78,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/atoms19/dominity.js',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,7 +109,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/dominity',
+                href: 'https://twitter.com/vishal_v_devan',
               },
             ],
           },

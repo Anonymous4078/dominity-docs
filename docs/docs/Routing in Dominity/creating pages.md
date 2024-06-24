@@ -19,8 +19,11 @@ function homePage(router){
 }
 
 export default homePage
+
 ```
+:::warning client side router
 
+client side router is only worth it for small Progressive web apps with a few routes as it prevents page realoads and creates an app like experience ,
+it is not recommended for large projects if u dont want router use `lite-version` or `no-router` version
 
-
-
+:::

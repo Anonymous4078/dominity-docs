@@ -1,0 +1,77 @@
+---
+sidebar_position: 3
+---
+
+
+### changing or getting text 
+
+you can use the `.text()` method to set or get the textContent of the element
+if parameter is left empty it will return the textContent else you could pass in a string to set it
+```js
+$el('#username').text(username)
+
+```
+
+### changing or getting innerHTML 
+
+you can use the `.html()` method to set or get the InnerHTML of the element
+if parameter is left empty it will return the InnerHTML else you could pass in a string to set it
+```js
+$el('content').html(`
+<span><h1>woah</h1></span>
+`)
+
+```
+
+
+
+### styling with style method
+
+`style()` method is used to assign styles to dominityElements in bulk 
+```js
+
+el('div').style({
+    backgroundColor:'red',
+    padding:'3rem',
+    display:'flex',
+    'background-image':'url()'
+})
+
+```
+they take in an object and allows you to style components directly from the js file 
+you could either use camelCased props or use properties as strings
+
+you can also use style method to get a computed style of an element by using only first argument and providing the property as a string
+
+```js
+
+let buttonColor=Button().style('background-color')
+
+```
+however these you cant style psuedo classes so or media queries so it is recommended to use a lightweight css framework that does this classbased 
+we recommend a 1kb library called synxia <a href='https://synxia.onrender.com'>check it out</a> or just use tailwindcss cdn
+
+
+### setting or getting attributes
+you can use `.attr()` to set or get attributes you can pass in an object to set it on bulk or you could specify property , value as first and second parameter respectively , leaving the value empty and just the first property as a string returns the attribute value
+
+`.removeAttr()` can be used to remove attributes
+`.toggleAttr()` can be used to toggle an attribute
+
+### hiding and showing elements
+
+you can use `.hide()` to hide an element and `.show()` to display the element or you could use `.toggleHide()` to toggle between the two they all take in parameters as callback functons to do aftere their action
+
+### adding removing and toggling classes
+
+you can use `.class()` method and specify classes as one by one parameters to add them 
+you can use `.removeClass()` method to remove them or
+use `.toggleClass()`method and specify classes as one by one parameters to toggle them 
+
+
+### navigating to elements after and before the element
+
+`.after()` method fetches the next element
+`before()` metod fetches the previous element
+
+`parent()` method gives you the parent element

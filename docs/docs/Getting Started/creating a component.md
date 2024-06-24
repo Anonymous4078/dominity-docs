@@ -52,9 +52,16 @@ el('section').
 
 ```
 
+:::note using `_el()` to append elements
+`_el()` is not only capable of creating children elements it can also append elements when it recives a Dominity element (or a variable that stores one)
+
+:::
+
 ## component as a file
 
 you could technically import and export components and have them made in their own js file
+
+**if u dont understand this fully dont panic , we havent learnt everything yet revisit this example after u complete a few more sections, for now focus on the importing mechanics**
 ```js title='components/Dropdown.js'
 
 function Dropdown(name,itemsList){

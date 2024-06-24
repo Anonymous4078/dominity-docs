@@ -45,4 +45,28 @@ el('input',{value:2,max:100,min:1,type:'range'})
 you can select an element using `$el()` and passing in the query 
 or u can select all of the elements with that query using `$$el()` this is equivalent of querySelector all in dominity
 
+```js
 
+let btn=$el('#button')
+
+btn.text('woah') //updating the text of button using dominity
+
+let btns=$$el('buttons')
+
+btns.forEach(btn=>{
+    btn.style('background','blue')
+ })   //styling all buttons on the website blue
+
+```
+
+### storing reference in variables
+
+All Dominity elements can technically be stored in variables this allows us to update or make changes to them in the code at a later point of time
+even the reference of elements you created can be stored in a variable
+```js
+
+let btn=el('button','hello')
+
+btn.onClick(()=>{}) //adding a click event listener on stored reference
+
+```

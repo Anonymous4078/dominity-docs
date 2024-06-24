@@ -8,8 +8,7 @@ for links to work inside routes they need to call `routeTo()` function on click
 you can easily use a component provided by router called `Link()`
 
 
-```js
-
+```js title='homePage.js'
 
 function home(r){
 
@@ -26,7 +25,7 @@ its first parameter is the text on the link and second is the path and third is 
 
 most of the time we rely on search queries for getting information for rendering the page this can easily be done using `getQueries()` method of router this will return an object of all search queries and its value on the link
 
-```js
+```js title='searchPage.js'
 function searchPage(r){
  let q=r.getQueries().q //like /search?q=
  return el('section'). 

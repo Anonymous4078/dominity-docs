@@ -8,7 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/easy.svg').default,
     description: (
       <>
-      one of the most easiest framework to use , it is directly written in js and handles everything from routing to reactivity 
+        one of the most easiest framework to use , it is directly written in js
+        and handles everything from routing to reactivity
       </>
     ),
   },
@@ -17,7 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/plane.svg').default,
     description: (
       <>
-      Dominity is powerful with its own router and reactivity system , it makes it easy to create powerful webapps
+        Dominity is powerful with its own router and reactivity system , it
+        makes it easy to create powerful webapps
       </>
     ),
   },
@@ -26,12 +28,14 @@ const FeatureList = [
     Svg: require('@site/static/img/cat.svg').default,
     description: (
       <>
-       dominity is extreemely tiny and does not contribute more than 10kB to your final build, while it does all the chores     </>
+        dominity is extreemely tiny and does not contribute more than 10kB to
+        your final build, while it does all the chores{' '}
+      </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

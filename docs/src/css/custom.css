@@ -28,6 +28,6 @@
   --ifm-color-primary-lightest: #ffd88e; /* Lightest light orange */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-::selection{
- background-color: #fda74b5b;
+::selection {
+  background-color: #fda74b5b;
 }

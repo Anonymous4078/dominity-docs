@@ -8,16 +8,15 @@ you can make a reactable a derived reactable by using the `.deriveFrom()` method
 and return value of the function will be the value of the derived reactable
 
 ```js
-let name=reactable('vishal')
+let name = reactable('vishal');
 
-let nameAsList=reactable().deriveFrom(name,(value)=>{
-return Array.from(value)
-})
-
+let nameAsList = reactable().deriveFrom(name, (value) => {
+  return Array.from(value);
+});
 ```
 
 :::tip
 
-you can use an array of reactables as the first parameter  of the `.deriveFrom()` method to make the reactable dependant to two or more reactables simultaneously
+you can use an array of reactables as the first parameter of the `.deriveFrom()` method to make the reactable dependant to two or more reactables simultaneously
 
 :::

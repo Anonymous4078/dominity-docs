@@ -2,38 +2,33 @@
 sidebar_position: 1
 ---
 
-# Installation
-
-Let's setup **Dominity in less than a minutes**.
-
 ## Getting Started
 
-Get started by **creating a new site with dominity** , lets learn to add Dominity to our oroject first.
+Let's get started by creating a new site with Dominity, and learning to add it to our project.
 
-## Add Dominity to your site with CDN
+## Add Dominity using a CDN
 
-add dominity cdn your html file , by copy pasting the following code block
+Add Dominity using CDN to your HTML file, by copy pasting the following code block
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/atoms19/dominity.js@latest/dist/dominity.min.js"></script>
 ```
 
-this is the easiest way to use dominity is with cdn its size is smaller than `10kB` smaller than bootstrap or jquery,
-now u can use dominity functions in all the script tags or js file linked after this script tag
+Now you can use Dominity functions in all the script tags or js file linked after this script tag
 
-## Choosing the right CDN
+:::tip[Choosing the right CDN]
 
-You may not want all the features of Dominity sometimes, so depending on your project needs choose the ideal script tag that offers what you seek
+You may not want all the features of Dominity in some cases, so depending on needs of your project, choose the ideal `<script>` tag that offers what you need.
 
-### lite version
+### Minified Version
 
-this version is an even lighter version of dominity that strips away the routing feature and many other not so used methods of dominityElements
+This version is an even lighter version of Dominity that strips away the routing feature and many other not so used methods of dominityElements
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/atoms19/dominity.js@latest/dist/dominity-lite.min.js"></script>
 ```
 
-### Esm version
+### ESM version
 
 This is a CDN that is supposed to be used in the js file linked through a script tag with `type="module"`
 this version allows you to import only what you want from Dominity

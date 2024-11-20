@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-### making pages
+### Making pages
 
-pages are components that encapsulate the entire content of a route of your website they are made just like the components but these page components are passed into a router so they get access to the router object and its methods through its first parameter
+Pages are components that encapsulate the entire content of a route of your website. They are made just like the components but these page components are passed into a router so they get access to the router object and its methods through its first parameter.
 
 ```js title="homePage.js"
 import coursel from 'coursel.js';
@@ -17,9 +17,9 @@ function homePage(router) {
 export default homePage;
 ```
 
-:::warning client side router
+:::warning[Client side router]
 
-client side router is only worth it for small Progressive web apps with a few routes as it prevents page realoads and creates an app like experience ,
+Client side router is only worth it for small progressive web apps with a few routes as it prevents page reloads and creates an app like experience,
 it is not recommended for large projects if u dont want router use `lite-version` or `no-router` version
 
 :::
